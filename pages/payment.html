@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/payment.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="scaffold">
+        <div class="nav-section">
+            <div class="pic">
+                <a href="../index.html"> <img src="../images/logo.svg"></a>
+            </div>
+            <ul>
+                <li><a href="#">NEW</a> </li>
+                <li><a href="#">MEN</a> </li>
+                <li><a href="#">WOMEN</a> </li>
+                <li><a href="#">BOYS</a> </li>
+                <li><a href="#">GIRLS</a> </li>
+                <li><a href="#">MORE SIZES</a> </li>
+                <li><a href="#">TIES</a> </li>
+                <li><a href="#">SALE</a> </li>
+                <li><a href="#">MORE</a> </li>
+                <li>
+                    <div class="box">
+                        <input type="text" class="txt" placeholder="Type here">
+                        <a href="#"> <i class=" searchme fas fa-search"></i> </a>
+                    </div>
+                </li>
+                <li>
+                    <button class="click">
+                        <img src="../images/nav-icon.svg">
+                        <put>(<pin id="me">0</pin>)</put>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="leftCart">
+                <div class="summary">
+                    <div class="orderSum">
+                        <h2>Order Summary</h2>
+                        <h5><ok id="track"> 0 </ok> items</h5>
+                    </div>
+                    <div class="detailSum">
+                        <div class="value">
+                            <p>Subtotal</p>
+                            <p>Salex Tax</p>
+                            <P>Shipping Discount (-)</P>
+                            <p><strong>TOTAL</strong></p>
+                        </div>
+                        <div class="prices">
+                            <P>$ <ok id="subtotal2"> 0 </ok>
+                            </P>
+                            <P>$ <ok id="tax"> 0.00 </ok>
+                            </P>
+                            <P>$ <ok id="ship"> 0.00 </ok>
+                            </p>
+                            <P> $ <strong id="addition"> 0 </strong> </P>
+                        </div>
+                    </div>
+                    <div class="checkitout">
+                        <a href="#"> <button id="payment">NEXT PAYMENT</button></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rightCart">
+                <div class="headerCart">
+                    <div class="itemCart">
+                        <p>ITEM</p>
+                    </div>
+                    <div class="quantityUnit">
+                        <p>QUANTITY</p>
+                    </div>
+                    <div class="deliveryPic">
+                        <P> UNIT PRICE</P>
+
+                    </div>
+                    <div class="totalCart">
+                        <p>TOTAL PRICE</p>
+                    </div>
+                </div>
+                <div class="goods">
+                    <div class="itemGoods">
+                        <div class="itemPic">
+                            <img src="../images/prod-img-01.jpg" alt="">
+                        </div>
+                        <div class="shouldbe">
+                            <div class="itemDet">
+                                <h4>Boys' Stillwater Sherpa 1/4-Zip </h4>
+                                <p> <strong>Style</strong>: 3K001154 | <strong>Color</strong>: Pink |
+                                    <strong>Size</strong>:4T
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="quantie">
+                        <div class="selQuan">
+                            <p id="finQuan"> 0 </p>
+                        </div>
+                        <div class="discQuan">
+                            <P></P>
+
+                        </div>
+                    </div>
+                    <div class="inlin">
+                        <P>$
+                            <ok id="cartPrice"> 0</ok>
+                        </P>
+                    </div>
+                    <div class="toapPRI">
+                        <P>$
+                            <ok id='siUnit'> 0</ok>
+                        </P>
+                        <P>$
+                            <ok id="toUnit"> 0</ok>
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/payment.js"></script>
+</body>
+
+</html>
